@@ -134,8 +134,12 @@ input::-ms-clear, input::-ms-reveal {
 
 
 input[type=search]::placeholder{ color: #fff; font-size: 18px;}
+input[type=search]::-ms-input-placeholder { color: #f00; }
+input[type=search]::-webkit-input-placeholder { color: #f00; } 
+input[type=search]::-moz-placeholder { color: #f00; }
 
-
+:-ms-input-placeholder { color: #ccc !important;}
+::-ms-input-placeholder { color: #ccc !important;}
 
 /******************************* button 스타일 **********************************************************************************************************************************/
 
