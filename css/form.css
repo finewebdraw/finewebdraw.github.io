@@ -1,0 +1,187 @@
+@charset('utf-8');
+
+
+
+/*html, body{ font-family: 'Noto Sans KR', Roboto, Helvetica, Arial, sans-serif;}*/
+
+
+/* input 기본 스타일 초기화 */
+
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+            appearance: none;
+}
+
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+    display: none;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+        -ms-appearance: none;
+}
+
+/* Select box 스타일 초기화 */ 
+.inp_width select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+        -ms-appearance: none; 
+/*    color: transparent;*/
+    text-shadow: 0 0 0 #000;
+    border: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */ 
+.inp_width select::-ms-expand {
+    display: none;
+    border: none;
+    box-shadow: 0,0,0,0;
+    outline: none;
+}
+
+.inp_width select::-ms-value {
+    background: none; /* remove blue background on ie10/ie11 when selected*/
+    color:#000;
+}
+
+
+/* firefox */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+            appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    -ms-appearance: textfield;
+}
+
+button:focus,
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  outline: none !important;
+/*    color: transparent;*/
+    text-shadow: 0 0 0 #000;
+    border: none;
+    box-shadow: none;
+}
+
+
+select:-moz-focusring {
+/*    color: transparent;*/
+    text-shadow: 0 0 0 #000;
+    border: none;
+}
+
+select { appearance: none; -webkit-appearance: none; border: none;}
+select::-ms-expand { display: none; }
+
+
+
+.ui-dialog-content input[type="radio"]{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+            appearance: none;
+    display: none;
+}
+
+
+input[type="file"]{
+    background: none; font-size: 11px !important; padding: 4px 10px !important;
+}
+
+textarea{line-height: 1.5em;}
+
+
+
+input[type="text"]::-ms-clear, input[type="passwword"]::-ms-clear {
+   display: none;
+   width: 0;
+   height: 0;
+}
+
+input[type="text"]::-ms-reveal, input[type="passwword"]::-ms-reveal {
+   display: none;
+   width: 0;
+   height: 0;
+}
+
+
+
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+
+
+
+input[type=search]::placeholder{ color: #fff; font-size: 18px;}
+
+
+
+/******************************* button 스타일 **********************************************************************************************************************************/
+
+/** 버튼 스타일
+* 정사각형 버튼/토글 : a 태그
+* 기본 버튼 : button, input[type=button]
+* 아이콘이 포함된 버튼 : a 태그
+**/
+
+/* button */
+button, input[type="button"]{ }
+
+button, input[type="button"]{display: flex; justify-content: center; flex-direction: column; align-items: center;   display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
+} 
+
+
+/******************************* input 스타일 **********************************************************************************************************************************/
+
+
+/* input */
+.input_wrap{ background-color: violet; width: 520px; margin-right: 20px; height: 100%; border: 2px solid #fff;}
+
+.input_wrap input{ background: none; border: none; width: 100%; height: 100%; font-size: 18px;}
+
+
+
+/** 검색 영역 input  */
+.inp_serch{ height: 48px;}
+.inp_serch .input_wrap{ background: url(../images/ic_form_serch@2x.png) no-repeat 12px center;  background-size: 24px;}
+
+.inp_serch .input_wrap input{ padding-left: 48px; padding-right: 10px; color: #fff;}
+
+.inp_serch button{ width: 100px; height: 48px; background-color: #fff; border-top-left-radius: 15px; border-bottom-right-radius: 15px; color: #616a87; font-weight: 500;}
+
+
+.inp_select{ width: 210px; height: 48px; border-bottom: 2px solid #fff; background: url(../images/ic_arrow_r@2x.png) no-repeat 97% center; background-size: 15px;}
+.inp_select select{ width: 100%; height: 100%; background: none; padding-left: 10px; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+

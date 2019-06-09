@@ -1,0 +1,300 @@
+
+/* button */
+button, input[type="button"]{ height: 32px; padding: 7px 20px; border-radius: 3px; font-size: 14px; line-height: 1.5;}
+
+button, input[type="button"]{display: flex; justify-content: center; flex-direction: column; align-items: center;   display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
+} 
+
+.button_set button, .button_set input[type="button"]{margin-left: 15px;}
+
+.btn_square{width: 34px; height: 34px; border-radius: 5px;}
+.btn_square a{ width: 100%; height: 100%; border-radius: inherit; color: #fff; font-size: 20px;}
+.btn_square a, .btn_square{}
+
+.btn, .btn_widhic{ height: 32px; border-radius: 3px;}
+.btn a{ padding: 0px 15px;  width: 100%; height: 100%; border-radius: inherit; color: #fff; font-size: 14px; line-height: 1.5;}
+.btn a span:first-child{ margin-right: 8px; }
+
+.btn_full{ width: 100%; height: 36px;}
+
+
+
+/* 용도별 버튼 스타일 */
+.btn_primary, .btn_widhic > a.primary,
+button.primary{ background-color: #ec3e84; color: #fff;}
+.btn_widhic a.secondary,
+button.secondary{ background-color: #616a87; color: #fff;}
+button.lightnavy{ background-color: #8895b5; color: #fff;}
+button.lightgray{ background-color: #ccc; color: #fff;}
+
+
+/* 수정 / 삭제 버튼 */
+.btn_ic{}
+.btn_txt{ text-indent: -9999px; font-size: 0;}
+.button_func a{ margin-left: 15px; color: #ccc;}
+.button_func a:hover{ color: #616a87;}
+
+
+/* no */
+button.active{ background-color: #32609c; color: #fff;}
+button.disabled:hover{opacity: 1;}
+button.disabled{ background-color: #ccc; color: #999;}
+button:hover, .btn a:hover{ opacity: .9;}
+
+.gray{ background-color: #ccc; color: #fff;}
+
+
+/* 아웃라인 버튼 */
+[class^="outline_"]{ padding: 7px 19px;}
+.outline_p{ border: 1px solid #4e96f0; color: #4e96f0;}
+.outline_s{ border: 1px solid #555; color: #555;}
+.outline_a{ border: 1px solid #32609c; color: #32609c;}
+.outline_d{ border: 1px solid #ccc; color: #ccc;}
+
+/* 버튼 사이즈 */
+.btn_size_L{ height: 48px; width: 320px; font-size: 20px;}
+.btn_size_R{ width: 150px;}
+.btn_size_S{ height: 26px; padding: 0 20px; font-size: 14px; }
+
+.btn_rect{ height: 32px; width: 32px; padding: 0;}
+button.btn_rect > i{ margin-right: 0 !important;}
+
+
+
+
+
+.input_wrap{width: 97%;}
+.input_wrap input, .input_wrap select,
+.inp_div input, .inp_div select
+{ display: block; width: 100%; height: 100%; padding: 6px 10px;  color: #666; border: 0; outline: 0; -webkit-appearance: none; background-color: transparent; font-size: 14px; border-radius: 0;}
+.screen_out{ overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+
+.inp_div{ height: 42px; font-size: 14px;}
+.inp_group{ width: 100%; }
+.with_label{ width: 33.3%;}
+.only_input{ width: 100%;}
+
+.inp_label{ width: 100px; padding: 6px; color: #999; resize: none; text-align: right; margin-right: 10px; line-height: 1.5;}
+.inp_width{height: 34px; width: 28%; border: 1px solid #ccc; border-radius: 3px; position: relative; background-color: #fff; /*min-width: 250px; max-width: 370px;*/ }
+.with_label .inp_width{ width:calc( 100% - 130px); width:expression( 100% - 130px);}
+
+.inp_width select, .inp_width input{ position: absolute; top: 0;}
+.inp_width span{ height: inherit; position: absolute; top: 0px; right: 10px; font-size: 11px; color: #616a87;}
+.inp_width span i.ui-icon-search,
+.inp_width span i.icon-ic-form-calendar{ font-size: 14px; margin-right: -3px; margin-top: -3px;}
+
+.input_wrap{ margin-bottom: 10px;}
+.input_wrap:last-child{ margin-bottom: 0;}
+.inp_group div:nth-of-type(3){ margin: 0 20px;}
+.inp_full{ width: 100%;} /* 로그인 */
+
+
+
+/* textarea */
+.inp_div_text{}
+.inp_textarea{ border: 1px solid #ccc; border-radius: 3px; background-color: #fff;}
+.inp_textarea textarea{ min-height: 100px; height: inherit; width: 100%; border: none; background:#fff; border-radius: inherit; color: #666; font-size: 14px; padding: 5px 5px 5px 10px;}
+
+/* textarea resize 수직으로만 조절 가능하게 함. ie 해당없음 */
+.inp_textarea textarea{ resize: vertical;}
+
+
+.swung_dash{ margin: 0 !important; }
+.swung_dash span{display: block; width: 100%; padding: 6px; font-weight: 600; color: #999;}
+
+.focus{ border-color: #2b345f;}
+
+
+
+/* 알림/경고 바 */
+.alert_div{ height: 34px; border-radius: 3px; }
+.alert_ic{ font-size: 12px;}
+.alert_txt{ font-size: 11px; margin-left: 5px;}
+
+.error{ background-color: #fff3f3; color: #f20000; }
+
+
+
+/* 라디오, 체크박스 */
+.control-group, .control-group-box
+{color: #666; font-size: 14px;}
+.control-group{ height: 32px;}
+.control{ display: inline-block; position: relative; padding-left: 25px;  line-height: 16px; margin-right: 20px;}
+.control input, .control-box input { position: absolute; top: 0; left: 0; z-index: -1; opacity: 2;}
+.control-indicator{ height: 18px; width: 18px; background: #fff; border: 2px solid #ccc; position: absolute; top: 0; left: 0; }
+.control-indi-deco{ height: 8px; width: 8px; display: block; background:#ccc; margin: 3px auto;}
+
+
+/* 이벤트시 색상 변경*/
+.control-checkbox .control-indicator, .control-checkbox .control-indicator .control-indi-dec{ border-radius: 3px; }
+.control-radio .control-indicator, .control-radio .control-indicator .control-indi-deco{ border-radius: 50%;}
+.control input:checked ~ .control-indicator {background: #fff; border-color: #616a87; }
+.control input:checked ~ .control-indicator .control-indi-deco{ background: #616a87;}
+.control input:disabled ~ .control-indicator { background: #eee; pointer-events: none;}
+.control_indicator:after { content: ''; position: absolute; display: none;}
+.control input:checked ~ .control-indicator:after { display: block;}
+.control-radio .control-indicator:after{ border-radius: 50%; height: 6px; width: 6px; background: #000;}
+
+
+/* 라디오 그룹형 */
+.control-group-box{ width: 400px; background-color: #fff; height: 32px; border-radius: 3px; overflow: hidden; border: 1px solid #ccc;}
+.control-box{ display: inline-block;  font-size: 14px; line-height: 30px; text-align: center; width: 100%; height: 32px; position: relative; cursor: pointer;}
+.control-ind-box{ width: 100%; height: 100%; position: absolute; top: 0; border-right: 1px solid #ccc;} 
+.control-group-box label:last-child .control-ind-box{ border-right: none;}
+.control-box input:checked ~ .control-ind-box, .control-box2 input:checked ~ .control-ind-box{background: #616a87; color: #fff;}
+.control-box input:disabled ~ .control-ind-box, .control-box2 input:disabled ~ .control-ind-box{background: #eee; color: #999;}
+.control-group-box, .control-group-box2{ display: flex; flex-direction: row; justify-content: space-between;}
+.control-group-box2{ background-color: #fff; height: 28px; border-radius: 5px; margin: 0; overflow: hidden; border: 1px solid #ccc;}
+.control-box2{ display: inline-block;  font-size: 13px; line-height: 30px; text-align: center; width: 100%; height: 28px; position: relative; cursor: pointer;}
+
+
+
+/* 체크 박스 */
+
+.chk{ display: inline-block; position: relative; padding-left: 25px;  line-height: 16px; margin-right: 20px;}
+.chk .chk_label{ color: #ccc;}
+.chk_txt{ color: #666;}
+.chk .check_point{  height: 18px; width: 18px; position: absolute; top: 0; left: 0; font-size: 18px;  }
+.chk input{ position: absolute; top: 0; left: 0; z-index: -1; opacity: 2; }
+
+.chk input:checked ~ .chk_label, .chk input:checked ~ .chk_label .chk_txt,
+.chk input:checked ~ .check_point i{ color: #59607c !important;}
+.chk input:disabled ~ .chk_label .chk_txt{ pointer-events: none; color: #aaa;}
+.chk input:disabled ~ .chk_label .check_point{ background-position: 0px -38px;}
+.check_point:after { content: ''; position: absolute; display: none;}
+.chk input:checked ~ .check_point:after { display: block;}
+.check_point{ background: url('../images/checkbox@3x.png') no-repeat; background-size: cover; background-position: 0px 1px;}
+.chk input:checked ~ .chk_label .check_point{ background-position: 0px -19px;}
+
+
+
+/* 활성, 비활성 */
+input::placeholder { color: #666;}
+input:disabled::placeholder { color: #aaa;}
+textarea::placeholder { color: #666;}
+
+
+.attach_file{ cursor: pointer;}
+
+
+/* 파일 업로드 */
+
+.filebox{ margin-right: 10px; }
+.filebox label { display: inline-block; width: 100px; padding: .5em 0; text-align: center; color: #fff; font-size: inherit; line-height: normal; vertical-align: middle; background-color: #616a87; cursor: pointer; border: 1px solid #2b345f; border-radius: 3px; -webkit-transition: background-color 0.2s; transition: background-color 0.2s; }
+.filebox label:hover {background-color: #2b345f;}
+.filebox label:active {background-color: #2b345f;}
+.filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
+
+
+
+/* 파일첨부 */
+.procbox{  width:calc( 100% - 110px); width:expression( 100% - 110px);}
+.fileSizebox{font-size: 14px; margin-bottom: 10px;}
+.fileSizebox span:first-child{ margin-right: 5px;}
+.fileName{ width: 380px; font-size: 14px; line-height: 18px;}
+
+
+.progressbox{ background-color: cadetblue; height: 10px; width: 100%;}
+.fileProgress{ background-color: #eee; width: 100%; height: inherit;}
+.progressBar{ width: 1%; background-color:#616a87; height: inherit;}
+
+
+
+/* 첨부 영역 */
+.attachFileList{ border: 1px solid #ccc; padding: 20px;}
+.attachFileList span{ padding: 4px;}
+.attachFileList i.icon-ic-set-error{ color: red; font-weight: 600; cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.jqueryscript.net/tags.php?/WYSIWYG%20Editor/
+
+
+
+/* noto-sans-kr-100 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/noto-sans-kr-v11-korean_latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Thin'), local('NotoSansKR-Thin'),
+       url('../fonts/noto-sans-kr-v11-korean_latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v11-korean_latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v11-korean_latin-100.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-300 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/noto-sans-kr-v11-korean_latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Light'), local('NotoSansKR-Light'),
+       url('../fonts/noto-sans-kr-v11-korean_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v11-korean_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v11-korean_latin-300.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-regular - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-kr-v11-korean_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+       url('../fonts/noto-sans-kr-v11-korean_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v11-korean_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v11-korean_latin-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-500 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/noto-sans-kr-v11-korean_latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),
+       url('../fonts/noto-sans-kr-v11-korean_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v11-korean_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v11-korean_latin-500.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-700 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/noto-sans-kr-v11-korean_latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+       url('../fonts/noto-sans-kr-v11-korean_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v11-korean_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v11-korean_latin-700.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-kr-900 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/noto-sans-kr-v11-korean_latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Black'), local('NotoSansKR-Black'),
+       url('../fonts/noto-sans-kr-v11-korean_latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v11-korean_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v11-korean_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v11-korean_latin-900.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
