@@ -1,17 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="" lang="UTF-8">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="https://github.com/JiHong88" />
-    <meta name="keywords" content="wysiwyg,editor,javascript,suneditor,wysiwyg eidtor,rich text editor,html editor,contenteditable,위지위그 에디터 웹에디터">
-    <meta name="description" content="Pure javascript wysiwyg web editor" />
-    <title>Suneditor</title>
-    <!-- sample css -->
+    <title>경기콘텐츠진흥원 데이터 라이브러리 대민 서비스</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+       
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.css" type="text/css">
+    
+     <!-- plugin CSS --> 
+    <link rel="stylesheet" href="js/jqGrid/css/ui.jqgrid.css" type="text/css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.css" type="text/css">
+    <link rel="stylesheet" href="js/datetimepiker/jquery-ui-timepicker-addon.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    <!-- CUSTOM CSS --> 
+    <link rel="stylesheet" href="icon/gcaicon/css/gcaicon.css" type="text/css">
+    <link rel="stylesheet" href="icon/basicon/css/basicon.css" type="text/css">
+    <link rel="stylesheet" href="css/module.css" type="text/css">
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
 
-    <!-- suneditor -->
-</head>
+    <!-- SCRIPT -->  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+   <!-- DateTimePicker SCRIPT --> 
+   <script src="js/datetimepiker/jquery-ui-timepicker-addon.js"></script>
+   <script src="js/datetimepiker/jquery-ui-sliderAccess.js"></script>
+   <script src="js/datetimepiker/jquery-ui-timepicker-ko.js"></script>
+   
+   <!-- jqGird SCRIPT --> 
+   <script src="js/jqGrid/jquery.jqgrid.min.js"></script>
+   <script src="js/jqGrid/i18n/grid.locale-kr.js"></script>
+   
+   <!-- wysiwyg SCRIPT -->
+    <link rel="stylesheet" href="js/wysiwyg/fdEditor.css" type="text/css">
+   <script src="js/wysiwyg/fdEditor.js"></script>
+   
+
+   <!-- CUSTOM SCRIPT --> 
+   <script src="js/common/jqGrid.paginate.js"></script>
+   <script src="js/common/jqGrid.example.js"></script>
+   <script src="js/common/dialog.js"></script>
+   <script src="js/common/common.js"></script>
+   
+</head>  
+<!--  -->
+
 <body>
-<h1>hihi</h1>
-</body>
+    <div id="wrap" class="">
+        <div class="header flex_b">
+            <div class="aSide flex_w_col">
+                <h1>logo</h1>
+                <p>빅데이터 라이브러리</p>
+            </div>
+            <div class="bSide flex_a">
+                <div class="li_user">
+                    <span>홍길동님</span><span class="ic_user_info">정보수정</span>
+                </div>
+                <div class="li_logout">
+                    <span>       
+                        <a href="#" class="flex_c">
+                            <div class='toggle_onoff' id='switchApp'>
+                                <div class='toggle_txt_off'>OFF</div>
+                                <div class='glow_on'></div>
+                                <div class='toggle_btn'></div>
+                                <div class='toggle_txt_on'>ON</div>
+                            </div>
+                        </a>
+                    </span><span>로그아웃</span>
+                </div>
+                <div class="li_join">
+                    <span>회원가입</span>
+                </div>
+            </div>
+        </div><!-- end.header -->
+        <div class="main_wrap">
+            <div class="serch_section flex_c">
+               <div class="flex_a">
+                   <div class="inp_serch flex_a">
+                       <div class="input_wrap">
+                           <input type="search" placeholder="검색어 입력">
+                       </div>
+                       <button>검색</button>
+                   </div>
+                   <div class="top_serch">
+                       <div class="selected_key"><a href="#">미세먼지</a></div>
+                       <ul class="serch_keys hide">
+                           <li><a href="#">미세먼지</a></li>
+                           <li><a href="#">키워드2</a></li>
+                           <li><a href="#">키워드3</a></li>
+                           <li><a href="#">키워드4</a></li>
+                           <li><a href="#">키워드5</a></li>
+                       </ul>
+                   </div>
+<!--
+                   <div class="inp_select">
+                       <select>
+                           <option>미세먼지</option>
+                           <option>옵션2</option>
+                           <option>옵션3</option>
+                           <option>옵션4</option>
+                           <option>옵션5</option>
+                       </select>
+                   </div>
+-->
+               </div>
+            </div><!-- end.serch_section -->
+            <div class="main_contain">
+               <div class="category_wrap">
+                   <div class="category_tab">
+                        <ul>
+                            <li><a href="#tabs-1"><span>아이콘</span><span>표준분류</span></a></li>
+                            <li><a href="#tabs-2"><span>아이콘</span><span>기관분류</span></a></li>
+                        </ul>
+                   </div>
+                   
+               </div>
+            </div><!-- end.main_contain -->
+            <div class="board_contain">
+               게시판 영역
+            </div><!-- end.board_contain -->   
+        </div><!-- end.main_wrap -->
+        <div class="footer"></div><!-- end.footer -->
+        
+    
+    </div><!-- end.wrap -->
+
+ <script>   
+     
+     fdEditor();
+
+</script>              
+               
+</body>  
 </html>
